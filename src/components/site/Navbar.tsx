@@ -7,6 +7,7 @@ const links = [
   { label: "Technology", href: "#technology" },
   { label: "Impact", href: "#impact" },
   { label: "Careers", href: "#careers" },
+  { label: "Games", href: "https://games.zybytee.in", external: true },
 ];
 
 export function Navbar() {
@@ -51,6 +52,8 @@ export function Navbar() {
               <a
                 key={l.href}
                 href={l.href}
+                target={l.external ? "_blank" : undefined}
+                rel={l.external ? "noopener noreferrer" : undefined}
                 className="px-4 py-2 text-sm text-muted-foreground hover:text-foreground transition-colors relative group"
               >
                 {l.label}
@@ -90,6 +93,8 @@ export function Navbar() {
               <a
                 key={l.href}
                 href={l.href}
+                target={l.external ? "_blank" : undefined}
+                rel={l.external ? "noopener noreferrer" : undefined}
                 onClick={() => setOpen(false)}
                 className="px-3 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-white/[0.04]"
               >
