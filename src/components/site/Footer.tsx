@@ -1,14 +1,45 @@
 export function Footer() {
   const cols = [
-    { title: "Ecosystem", links: ["Zybytee AI", "Zybytee Cloud", "Zybytee OS", "Zybytee Labs", "Zybytee Studio"] },
-    { title: "Company", links: ["Vision", "Careers", "Press", "Contact"] },
-    { title: "Resources", links: ["Manifesto", "Research", "Brand", "Legal"] },
+    {
+      title: "Products",
+      links: [
+        { label: "Zybytee Business", href: "https://business.zybytee.in", external: true },
+      ],
+    },
+    {
+      title: "Ecosystem",
+      links: [
+        { label: "Zybytee AI", href: "#" },
+        { label: "Zybytee Cloud", href: "#" },
+        { label: "Zybytee OS", href: "#" },
+        { label: "Zybytee Labs", href: "#" },
+        { label: "Zybytee Studio", href: "#" },
+      ],
+    },
+    {
+      title: "Company",
+      links: [
+        { label: "Vision", href: "#vision" },
+        { label: "Careers", href: "#careers" },
+        { label: "Press", href: "#" },
+        { label: "Contact", href: "#cta" },
+      ],
+    },
+    {
+      title: "Resources",
+      links: [
+        { label: "Manifesto", href: "#" },
+        { label: "Research", href: "#" },
+        { label: "Brand", href: "#" },
+        { label: "Legal", href: "#" },
+      ],
+    },
   ];
 
   return (
     <footer className="relative border-t border-border">
       <div className="max-w-7xl mx-auto px-6 py-20">
-        <div className="grid lg:grid-cols-5 gap-12">
+        <div className="grid lg:grid-cols-6 gap-12">
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2.5">
               <div className="relative h-7 w-7">
@@ -33,9 +64,14 @@ export function Footer() {
               </div>
               <ul className="mt-5 space-y-3">
                 {c.links.map((l) => (
-                  <li key={l}>
-                    <a href="#" className="text-sm text-foreground/80 hover:text-foreground transition">
-                      {l}
+                  <li key={l.label}>
+                    <a
+                      href={l.href}
+                      target={l.external ? "_blank" : undefined}
+                      rel={l.external ? "noopener noreferrer" : undefined}
+                      className="text-sm text-foreground/80 hover:text-foreground transition"
+                    >
+                      {l.label}
                     </a>
                   </li>
                 ))}

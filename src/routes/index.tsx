@@ -8,6 +8,7 @@ import { Vision } from "@/components/site/Vision";
 import { Technology } from "@/components/site/Technology";
 import { Impact } from "@/components/site/Impact";
 import { Careers } from "@/components/site/Careers";
+import { Products } from "@/components/site/Products";
 import { CTA } from "@/components/site/CTA";
 import { Footer } from "@/components/site/Footer";
 
@@ -49,6 +50,7 @@ function Index() {
       <Technology />
       <Impact />
       <Careers />
+      <Products />
       <CTA />
       <Footer />
     </main>
