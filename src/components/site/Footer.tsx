@@ -42,11 +42,11 @@ export function Footer() {
         <div className="grid lg:grid-cols-6 gap-12">
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2.5">
-              <div className="relative h-7 w-7">
-                <div className="absolute inset-0 rounded-md bg-gradient-to-br from-cyan to-electric" />
-                <div className="absolute inset-[3px] rounded-[5px] bg-background" />
-                <div className="absolute inset-[6px] rounded-[3px] bg-gradient-to-br from-cyan to-violet-glow" />
-              </div>
+              <img
+                src="/favicon.png"
+                alt="Zybytee"
+                className="h-7 w-7 rounded-md"
+              />
               <span className="font-display text-lg font-semibold">Zybytee</span>
             </div>
             <p className="mt-6 max-w-sm text-sm text-muted-foreground leading-relaxed">

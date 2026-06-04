@@ -38,11 +38,11 @@ export function Navbar() {
           }`}
         >
           <a href="#top" className="flex items-center gap-2.5 group">
-            <div className="relative h-7 w-7">
-              <div className="absolute inset-0 rounded-md bg-gradient-to-br from-cyan to-electric opacity-90 group-hover:opacity-100 transition" />
-              <div className="absolute inset-[3px] rounded-[5px] bg-background" />
-              <div className="absolute inset-[6px] rounded-[3px] bg-gradient-to-br from-cyan to-violet-glow" />
-            </div>
+            <img
+              src="/zybytee-navbar.png"
+              alt="ZyBytee"
+              className="h-7 w-7 rounded-md"
+            />
             <span className="font-display text-lg font-semibold tracking-tight">
               Zybytee
             </span>
